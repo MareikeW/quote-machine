@@ -1,3 +1,5 @@
+
+
 const newQuoteButton = document.getElementById("quote__btn");
 const quoteContainer = document.getElementById("quote__container");
 
@@ -9,7 +11,11 @@ async function getNewQuote() {
     
     let quote = quotes[Math.floor(Math.random() * quotes.length)]
     
+    quoteContainer.style.visibility = "visible";
     quoteContainer.innerHTML = `
     <blockquote class="quote__block">"${quote.quote}"</blockquote>
     <cite class="source">${quote.source} by ${quote.author}</cite>`;
+
+    // Wählt eine zufällige Farbe aus der Chroma-Library
+    document.body.style.backgroundColor = chroma.random().brighten(2);
 }

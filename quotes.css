@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock&family=Rubik:ital,wght@0,500;1,300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     margin-bottom: 1.5em;
-    font-family: monospace;
-    
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1em;
 }
 
 body {
     padding: 1em;
-    
-    
+    margin: 0 10%; 
 }
 
 header {
@@ -20,4 +21,43 @@ header {
 h1 {
     font-size: 1.5em;
     text-align: center;
+}
+
+#quote__container {
+    background-color: #fffff0;
+    padding: 1.2em;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.quote__block {
+    font-family: 'Overlock', cursive;
+}
+
+.source {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+#quote__btn {
+    display: block;
+    margin: 0 auto;
+    padding: .9em 1.2em;
+    border-radius: 30px;
+    border-color: rgb(110, 12, 110);
+    background-color: rgb(110, 12, 110);
+    color: ivory;
+    outline: none;
+}
+
+#quote__btn:hover {
+    cursor: pointer;
+    background-color: #663399;
+    border-color: #663399;
+}
+
+@media (min-width: 600px) {
+    body {
+        margin: 0 25%;
+    }
 }
