@@ -11,7 +11,7 @@
 
 body {
     padding: 1em;
-    margin: 0 10%; 
+    margin: 0 10%;
 }
 
 h1 {
@@ -53,7 +53,8 @@ h1 {
 }
 
 footer {
-    position: absolute;
+    position: relative;
+    text-align: center;
     margin-bottom: 0;
     left: 0;
     bottom: 0;
