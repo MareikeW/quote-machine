@@ -60,8 +60,14 @@ footer {
     bottom: 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     body {
         margin: 0 25%;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 1em;
+        left: 1em;
     }
 }
