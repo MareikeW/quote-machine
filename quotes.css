@@ -4,19 +4,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin-bottom: 1.5em;
     font-family: 'Rubik', sans-serif;
     font-size: 1.1em;
 }
 
-body {
-    padding: 1em;
-    margin: 0 10%;
+header {
+    margin: 1.2em 0;
+    height: 40px;
+    text-align: center;
 }
 
 h1 {
     font-size: 1.5em;
     text-align: center;
+}
+
+main {
+    min-height: calc(100vh - 60px);
+}
+
+main > * {
+    margin: 1em 1.2em;
 }
 
 #quote__container {
@@ -28,6 +36,7 @@ h1 {
 
 .quote__block {
     font-family: 'Overlock', cursive;
+    margin-bottom: 1em;
 }
 
 .source {
@@ -53,21 +62,19 @@ h1 {
 }
 
 footer {
-    position: relative;
+    height: 20px;
     text-align: center;
-    margin-bottom: 0;
-    left: 0;
-    bottom: 0;
+    margin-top: 1em;
+    margin-bottom: 1.2em;
 }
 
 @media (min-width: 800px) {
-    body {
-        margin: 0 25%;
+    header, footer {
+        text-align: left;
+        padding-left: 1em;
     }
 
-    footer {
-        position: fixed;
-        bottom: 1em;
-        left: 1em;
+    main > * {
+        margin: 1.5em 4em;
     }
 }
